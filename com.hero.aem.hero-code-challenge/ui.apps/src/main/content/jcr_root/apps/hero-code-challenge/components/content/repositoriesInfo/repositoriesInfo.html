@@ -1,0 +1,46 @@
+<!--/*
+   @author: Jorge Escobar <jescobar2705@gmail.com>
+   description : Hero Code Challenge - Feb 2022
+*/-->
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    img{
+        width: 15%;
+    }
+</style>
+<div data-sly-use.info="com.hero.aem.core.models.ReposInformationModel">
+    <p data-sly-test="${info.author}"> Author: ${info.author}</p>
+
+    <table>
+        <tr>
+            <th>${"Repository name" @i18n} JE</th>
+            <th>${"Repository URL" @i18n}</th>
+            <th>${"Owner Name" @i18n}</th>
+            <th>${"Owner Avatar" @i18n}</th>
+        </tr>
+        <sly data-sly-list="${info.repositoryInfo}">
+            <tr>
+                <td>${item.name}</td>
+                <td><a href="${item.url}">${item.url}</a></td>
+                <td>${item.username}</td>
+                <td><img src="${item.avatar}" alt="image"></td>
+
+            </tr>
+        </sly>
+    </table>
+</div>
+

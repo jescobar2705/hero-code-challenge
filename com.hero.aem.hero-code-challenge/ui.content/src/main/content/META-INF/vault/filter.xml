@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/hero-code-challenge" mode="merge"/>
+    <filter root="/content/hero-code-challenge" mode="merge"/>
+    <filter root="/content/dam/hero-code-challenge" mode="merge"/>
+    <filter root="/content/experience-fragments/hero-code-challenge" mode="merge"/>
+</workspaceFilter>
