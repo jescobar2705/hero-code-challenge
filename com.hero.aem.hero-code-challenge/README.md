@@ -7,10 +7,19 @@ The main logic is under
 * src/main/java/com/hero/aem/core/services
 * src/main/java/com/hero/aem/core/models
 
+**Unit Testing:**
+*  src/test/java/com/hero/aem/core/models
+
 **Component Resource Type**
 
 `hero-code-challenge/components/content/repositoriesInfo
 `
+
+**i18n:**
+
+There was added an i18n for english & spanish
+
+`apps/hero-code-challenge/i18n`
 
 # Sample AEM project template
 

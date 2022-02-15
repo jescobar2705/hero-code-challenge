@@ -30,6 +30,7 @@ public class ReposInformationModel {
   @OSGiService
   private GetReposInfoService infoService;
 
+  @Getter
   @ValueMapValue(name="author", injectionStrategy= InjectionStrategy.OPTIONAL)
   @Default(values = "adobe-consulting-services")
   private String author;
